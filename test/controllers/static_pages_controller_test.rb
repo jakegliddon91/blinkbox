@@ -7,7 +7,7 @@ def setup
   end
 
   test "should get root" do
-    get static_pages_root_url
+    get root_url
     assert_response :success
     assert_select "title", "Home | #{@base_title}"
   end
